@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>JavaScript Features</h1>
+        
+        <div class="tasks">
+            <!-- Task 1: Simple Calculator -->
+            <div class="task">
+                <h2>Basic Calculator</h2>
+                <div class="calculator">
+                    <input type="number" id="numberA" placeholder="First number">
+                    <input type="number" id="numberB" placeholder="Second number">
+                    <input type="text" id="operation" placeholder="Operator (+, -, *, /)">
+                    <button onclick="calculateResult()">Compute</button>
+                </div>
+                <div id="calculatorResult" class="result"></div>
+            </div>
+
+            <!-- Task 2: Array Operations -->
+            <div class="task">
+                <h2>Even Sum Calculator</h2>
+                <div class="array-operation">
+                    <input type="text" id="numberList" placeholder="Comma-separated numbers">
+                    <button onclick="sumEvenNumbers()">Calculate Sum</button>
+                </div>
+                <div id="arrayResult" class="result"></div>
+            </div>
+
+            <!-- Task 3: Object Manipulation -->
+            <div class="task">
+                <h2>Person Manager</h2>
+                <div class="person-manager">
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                    <input type="number" id="personAge" placeholder="Age">
+                    <button onclick="createPerson()">Create</button>
+                    <button onclick="displayPersonName()">Show Name</button>
+                    <button onclick="addAge()">Add Age</button>
+                </div>
+                <div id="personResult" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
